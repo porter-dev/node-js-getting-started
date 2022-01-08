@@ -1,0 +1,14 @@
+version: v1
+resources:
+  - name: nodejs-sample
+    source:
+      name: web
+    config:
+      build:
+        method: pack
+      values:
+        container:
+          port: 8080
+          env:
+            normal:
+              PORT: "8080"
